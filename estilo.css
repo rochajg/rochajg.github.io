@@ -1,0 +1,254 @@
+html, body {
+	font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", 
+				"Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+	background: #EEEEEE;
+	height: 100%;
+	direction: ltr;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*--------------Cabeçalho--------------*/
+
+.logo-cabecalho {
+	display: block;
+	float: left;
+
+}
+
+#cabecalho {
+	position: relative;
+	min-height: 11%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.box-cabecalho {
+	display: block;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid #DCDCDC;
+	background: #E0E0E0;
+}
+
+.text-cabecalho {    /*----------Caixa do Cabeçalho----------*/
+	min-width: 500px;
+	float: left;
+	margin-top: 5px;
+}
+
+#titulo-header {    /*--------------Texto do Cabeçalho-------------*/
+	margin-left: 100px;
+	cursor: pointer;
+	text-align: left;
+	font-size: 3em;
+	text-decoration: none;
+	color: #455A64;
+	background: rgba(0,0,0,0.00);
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+.menu {   /*-----------------Caixa do Menu Principal--------------------*/
+	overflow: hidden;
+	margin-top: 5px;
+	background: rgba(0,0,0,0.0);
+	display: block;
+	float: right;
+}
+
+.menu-list {   /*----------------Menu Principal------------------*/
+	min-width: 400px;
+	list-style-type: none;
+}
+
+.item-menu {  /*---------------Itens do Menu------------------*/
+	display: inline;
+	text-decoration: none;
+	background: rgba(0,0,0,0.00);
+	padding-right: 10px;
+	padding-left: 10px;
+	text-transform: uppercase;
+	text-decoration-color: #607D8B;
+}
+
+.menu-link {   /*-------------Links do Menu-----------*/
+	text-decoration: none;
+	color: #607D8B;
+}
+
+.menu-link:hover {   /*-------------Links do Menu (Mouse em cima)-----------*/
+	color: #0288D1;
+}
+
+.menu-link:active {   /*-------------Links do Menu(Mouse clicando)-----------*/
+	color: #26C6DA;
+}
+
+.menu-lateral {      /*---------------Menu Lateral------------------*/
+	background: #424242;
+	display: block;
+	width: 22%;
+	position: fixed;
+	left: 0px;
+	float: left;
+	margin-left: 5px;
+	margin-top: 30px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0, 0.7);
+}
+
+.list-menu-lateral {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	color: #EEEEEE;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+hr {
+	display: block;
+	margin-top: 1.5em;
+	margin-bottom: 2em;
+}
+
+li {
+	margin-bottom: 3	px;
+}
+
+/*----------------------Itens da Postagem-------------------------*/
+
+.conteudo{   /*---------------Conteúdo Principal--------------*/
+	margin-left: 24%;
+}
+
+.ul-list {
+	margin-left: 250px;
+}
+
+.botao {
+	display: block;
+	max-width: 140px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+	background: #689F38;
+	border-radius: 10px;
+
+	color: #FAFAFA;
+	text-align: center;
+	text-decoration: none;
+}
+
+.botao:hover {
+	background: #AED581;
+	color: #424242;
+}
+
+.botao:active {
+	background: #FFA726;
+	color: #424242;	
+}
+
+.img-post {
+	margin: 10px;
+	margin-right: 20px;
+}
+
+.post {
+	background: #F5F5F5;
+	width: 75%;
+	padding-left: 80px;
+	padding-bottom: 110px;
+	padding-right: 80px;
+	margin-top: 2%;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-bottom: 20%;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	position: relative;
+}
+
+.post-titulo {   /*---------Bloco de Base do Título--------*/
+	display: block;
+	box-shadow: 3px 2px 5px 0 rgba(0, 0, 0, 0.2);
+	background: #B0BEC5;
+	width: 115%;
+    position: relative;
+    margin-left: -90px;
+    top: 10px;
+    left: 0px;
+}
+
+h4 {   /*-------------Título da Postagem-----------*/
+	font-size: 1.5em;
+	color: #212121;
+    text-transform: uppercase;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: 100;
+    background: rgba(0,0,0,0.00);
+    padding-top: 15px;
+    padding-bottom: 8px;
+    padding-left: 60px;
+    font-weight: lighter;
+}
+
+.paragraph {   /*-------------Parágrafo-----------*/
+	background: rgba(0,0,0,0.00);
+	text-align: justify;
+}
+
+*::selection {
+	background: #00ACC1;
+	color: #FAFAFA;
+}
+
+/*--------------------Rodapé-----------------------*/
+
+.rodape{
+	position: relative;
+}
+
+.rodape-bar {
+	bottom: 0px;
+	background: #424242;
+	align-items: center;
+}
+
+.item-rodape {
+	color: #EEEEEE;
+	width: 25%;
+	margin-bottom: 20px;
+	margin-top: 30px;
+    margin-right: 60px;
+    margin-left: 60px;
+    position: relative;
+    display: -webkit-inline-box;
+}
+
+.item-list-rodape {
+	list-style-type: none;
+}
+
+.link-rodape {
+	color: #EEEEEE;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.link-rodape:hover {
+	color: #009688;
+}
+
+#texto-rodape {
+	align-items: center;
+	text-align: justify;
+}
+
+.copyright {
+	min-height: 30px;
+	background: #212121;
+	padding-top: 12px;
+	color: #BDBDBD;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="favicon.png">
+    <link href="./script/jquery.bxslider.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/jquery-3.2.1.min.js"></script>
+    <script src="./script/jquery.bxslider.min.js"></script>
+    <script src="./script/main.js"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+    <title>Marmita Gourmet - Restaurant</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav id="menu">
+        <a href="./index.html"><img id="nav-logo" src="./img/logo01.png"></a>
+        <ul class="nav-links">
+        <li><a href="#especialidades">Especialidades</a></li>
+        <li><a href="#como-chegar">Reservas</a></li>
+        <li><a href="#como-chegar">Como Chegar?</a></li>
+        <li><a href="#historia">História</a></li>
+        </ul>
+      </nav>
+      <div class="center-objects">
+        <img id="logo-header" src="./img/logo.png" height="686px">
+      </div>
+    </header>
+    <a href="#header"><div id="topButton"></div></a>
+    <section class="secao-escuro">
+      <h1>O MELHOR TRÊS ESTRELAS DA CIDADE</h1>
+      <div class="center-objects"><img src="./img/3-estrelas.png" alt="Três Estrelas"></div>
+    </section>
+    <section id="especialidades">
+      <div id="espec-bg"></div>
+      <h1>NOSSOS PRINCIPAIS PRATOS</h1>
+      <div class="espec-content">
+        <div class="img-content">
+          <img src="./img/macarronada.png" alt="Macarronada">
+          <div class="espec-descricao">Macarronada</div>          
+        </div>
+        <div class="img-content">
+          <img src="./img/lasanha-bolon.png" alt="Lasanha Bolonesa">
+          <div class="espec-descricao">Lasanha Bolonesa</div>          
+        </div>
+        <div class="img-content">
+          <img src="./img/carne-carneiro.png" alt="Carne de Carneiro">
+          <div class="espec-descricao">Carne de Carneiro</div>          
+        </div>
+        <div class="img-content">
+          <img src="./img/estrogonofe-file.png" alt="Estrogonofe de Filé">
+          <div class="espec-descricao">Estrogonofe de Filé</div>          
+        </div>
+        <div class="img-content">
+          <img src="./img/feijoada.png" alt="Feijoada">
+          <div class="espec-descricao">Feijoada</div>          
+        </div>
+        <div class="img-content">
+          <img src="./img/risoto-camarao.png" alt="Risoto de Camarão">
+          <div class="espec-descricao">Risoto de Camarão</div>          
+        </div>
+      </div>
+    </section>
+    <section class="secao-escuro" id="como-chegar">
+      <h1>COMO CHEGAR</h1>
+
+      <div class="center-objects espec-content">
+        <p>
+          Avenida Aleatória, 321 - 00303-200 - Lugar Aberto, EM<br>
+          (00) 4002-8922 / 93322-1100<br>
+          contato@marmitagourmet.com.br
+        </p>
+        <div id='gmap_canvas' style='height:440px;width:700px;'></div>
+        <script type='text/javascript'>function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(-1.4347526508992168,-48.45697454273135),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-1.4347526508992168,-48.45697454273135)});infowindow = new google.maps.InfoWindow({content:'<strong>Marmita Gourmet</strong><br>Avenida Aleatória, 321 - 00303-200 - Lugar Aberto, EM<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+      </div>
+    </section>
+    <section id="historia">
+      <h1>NOSSA HISTÓRIA</h1>
+      <div class="espec-content">
+      <img src="./img/criador.png" style="width: 40%;">
+      <div style="width: 50%; margin:30px;">
+        <p>
+          Há muito tempo, no mesmo lugar em que estamos agora, um jovem rapaz com um sonho abriu um restaurante de comida popular. Seu sonho era poder levar a comida com o gostinho de casa para todos.
+        </p>
+        <p>
+          As pessoas adoravam aquele sabor único que só a comida de casa podia proporcionar, e foi isso que fez seu negócio decolar. Nos dias atuais, as mesas do Marmita Gourmet vivem floridas e alegres com cada sorriso dos clientes. Venha fazer parte da nossa família também!
+        </p>
+      </div>
+      </div>
+    </section>
+    <section class="secao-escuro">
+      <h1>DEPOIMENTOS</h1>
+      <ul class="bxslider depoimentos center-objects">
+        <li class="depoimento slide">
+          <p>Adorei a comida</p>
+          <span>- Carlos Alberto</span>
+        </li>
+        <li class="depoimento">
+          <p>Excelente lugar</p>
+          <span>- Ana Maria</span>
+        </li>
+        <li class="depoimento">
+          <p>Perfeito!</p>
+          <span>- Brogui</span>
+        </li>
+        <li class="depoimento">
+          <p>Tudo lindo!</p>
+          <span>- José Carlos</span>
+        </li>
+      </ul>
+    </section>
+    <footer>
+      <div class="center-objects">
+        <a href="http://fb.com"><img class="social-icons" src="./img/facebook.png" alt="Facebook"></a>
+        <a href="http://instagram.com"><img class="social-icons" src="./img/instagram.png" alt="Instagram"></a>
+        <a href="http://gmail.com"><img class="social-icons" src="./img/mail.png" alt="Email"></a>
+      </div>
+        <div id="copyright">
+        <div class="center-objects">
+          <pre>Desenvolvido por <a href="http://rochajg.github.io">Jordan Rocha</a></pre>
+        </div>
+        </div>
+    </footer>
+  </body>
+</html>

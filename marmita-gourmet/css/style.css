@@ -1,0 +1,355 @@
+@font-face {
+  font-family: 'florentiaextralight';
+  src: url("fonts/florentia-extralight-webfont.woff2") format("woff2"), url("fonts/florentia-extralight-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'florentialight';
+  src: url("fonts/florentia-light-webfont.woff2") format("woff2"), url("fonts/florentia-light-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'florentiathin';
+  src: url("fonts/florentia-thin-webfont.woff2") format("woff2"), url("fonts/florentia-thin-webfont.woff") format("woff");
+}
+
+* {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.center-objects {
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  color: #042139;
+  margin: 0 auto 50px auto;
+  font-family: "florentiaextralight";
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #FFFFFF;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #422920;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  display: block;
+  background: url("../img/fachada.png");
+  background-size: cover;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+}
+
+header > nav {
+  z-index: 5;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  background: #FFFFFF;
+  /* The Fallback */
+  background: rgba(255, 255, 255, 0.4);
+  transition: ease-in-out 0.5s;
+}
+
+ul.nav-links {
+  float: right;
+  position: relative;
+  margin: 15px;
+  height: 66%;
+  list-style-type: none;
+  line-height: 60px;
+  white-space: nowrap;
+}
+
+ul.nav-links a {
+  font-family: "florentiaextralight";
+  font-size: 1.3em;
+  text-decoration: none;
+  text-align: center;
+  color: #422920;
+  margin-right: 10px;
+}
+
+ul.nav-links a:hover {
+  color: #E4E6Eb;
+}
+
+ul.nav-links li {
+  display: inline-flex;
+  border-right: 1px solid rgba(66, 41, 32, 0.4);
+  height: 60%;
+}
+
+ul.nav-links li:last-child {
+  border-right: none;
+}
+
+#nav-logo {
+  position: relative;
+  max-height: 66px;
+  float: left;
+  margin: 15px;
+}
+
+#logo-header {
+  max-height: 60%;
+}
+
+#topButton {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 3;
+  background: url("../img/topButton.png") no-repeat;
+  background-size: 100%;
+  opacity: 1.0;
+  transition: ease-in-out 0.5s;
+}
+
+#topButton::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #bfbfbf;
+  opacity: .2;
+  border-radius: 100%;
+  filter: blur(1px);
+}
+
+.secao-escuro {
+  background-color: #E4E6Eb;
+}
+
+section {
+  display: block;
+  padding: 60px 5%;
+  z-index: 2;
+}
+
+.espec-content {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img-content {
+  margin: 30px;
+  width: 260px;
+}
+
+.img-content img {
+  width: 100%;
+  border: thick solid #6E97B4;
+  border-radius: 100%;
+}
+
+.espec-descricao {
+  font-family: "florentiathin";
+  font-weight: 600;
+  font-size: 1.4em;
+  text-align: center;
+  width: 260px;
+  padding: 20px 10px;
+  border-radius: 8px;
+  background: rgba(66, 41, 32, 0.6);
+  color: #FFFFFF;
+  position: absolute;
+  z-index: 1;
+  margin-top: -45px;
+}
+
+#especialidades {
+  position: relative;
+  z-index: 1;
+}
+
+#especialidades::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: -1;
+  background: url("../img/plate-icon.png") no-repeat;
+  background-size: 40%;
+  background-position: -12% 5%;
+}
+
+p {
+  margin: 20px 5px;
+  font-size: 1.5em;
+  font-family: "florentialight";
+  text-align: justify;
+}
+
+#como-chegar {
+  position: relative;
+  z-index: 1;
+}
+
+#como-chegar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: -1;
+  background: url("../img/location-icon.png") no-repeat;
+  background-size: 15%;
+  background-position: 106% 50%;
+}
+
+#historia img {
+  border: thick #6E97B4 solid;
+  border-radius: 35px;
+}
+
+#historia p {
+  text-indent: 5%;
+  font-family: "florentiaextralight";
+}
+
+.depoimento {
+  position: relative;
+  background: url("../img/depoimento.png") no-repeat;
+  background-size: contain;
+  width: 600px;
+  height: 375px;
+}
+
+.depoimento p {
+  padding-left: 180px;
+  padding-top: 45px;
+}
+
+.depoimento span {
+  position: absolute;
+  bottom: 150px;
+  right: 50px;
+}
+
+.bx-wrapper .bx-controls-direction a {
+  opacity: 0;
+  transition: ease-in-out 1s;
+}
+
+footer {
+  width: 100%;
+  height: 250px;
+  background: #042139;
+  position: relative;
+}
+
+.social-icons {
+  margin: auto 10px;
+  width: 60px;
+  filter: saturate(0);
+  transition: ease-in-out 0.15s;
+}
+
+.social-icons:hover {
+  filter: saturate(1);
+  position: relative;
+  width: 75px;
+  margin: 0;
+}
+
+#copyright {
+  display: block;
+  background: #6E97B4;
+  color: #FFFFFF;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+}
+
+#copyright a {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: ease-in-out 0.2s;
+}
+
+#copyright a:hover {
+  color: #042139;
+}
+
+/*@media screen and (max-width: 520px) {
+  header > nav {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    & > a, ul.nav-links {
+      display: block;
+      height: 50%;
+      margin: auto;
+    }
+
+    & .nav-links {
+      font-size: 1.8em;
+    }
+  }
+
+  #topButton {
+    width: 100px;
+    height: 100px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  #historia > .espec-content {
+    width: 80%;
+  }
+
+  .social-icons {
+    width: 100px;
+  }
+
+  #copyright {
+
+  }
+}*/

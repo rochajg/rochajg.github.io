@@ -2,6 +2,10 @@ var alunos = document.getElementsByName('Turma'),
     mydb;
 
 function callInfo() {
+  loadJSON(function(response) {
+    mydb = JSON.parse(response);
+  });
+
   var selecionado;
 
   for(var i=0; i<alunos.length; i++) 
@@ -41,6 +45,3 @@ function loadJSON(callback) {
   xobj.send(null);
 }
 
-loadJSON(function(response) {
-  mydb = JSON.parse(response);
-});

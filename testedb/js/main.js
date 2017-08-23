@@ -2,10 +2,6 @@ var alunos = document.getElementsByName('Turma'),
     mydb;
 
 function callInfo() {
-  loadJSON(function(response) {
-    mydb = JSON.parse(response);
-  });
-
   var selecionado;
 
   for(var i=0; i<alunos.length; i++) 
@@ -15,7 +11,6 @@ function callInfo() {
     }
 
   for(var i=0; i<mydb.Turma.length; i++) {
-    console.log(mydb.Turma[i]);
     if(mydb.Turma[i].nome == selecionado) {
       selecionado = i;
       break;
@@ -45,3 +40,6 @@ function loadJSON(callback) {
   xobj.send(null);
 }
 
+loadJSON(function(response) {
+  mydb = JSON.parse(response);
+});

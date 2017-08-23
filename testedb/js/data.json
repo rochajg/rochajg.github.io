@@ -1,0 +1,39 @@
+{
+  "Turma": [
+    {
+      "nome": "Jordan Rocha",
+      "idade": 21,
+      "linguagem": "JavaScript"
+    },
+    {
+      "nome": "Leon Teixeira",
+      "idade": 19,
+      "linguagem": "Python"
+    },
+    {
+      "nome": "Wendell Cardoso",
+      "idade": 23,
+      "linguagem": "Java/Android"
+    },
+    {
+      "nome": "Igor Torres",
+      "idade": 21,
+      "linguagem": "Java"
+    },
+    {
+      "nome": "Marlon Andrei",
+      "idade": 23,
+      "linguagem": "C++"
+    },
+    {
+      "nome": "Richelmy Monteiro",
+      "idade": 23,
+      "linguagem": "C++"
+    },
+    {
+      "nome": "Bruno Murylo",
+      "idade": 23,
+      "linguagem": "PHP"
+    }
+  ]
+}
